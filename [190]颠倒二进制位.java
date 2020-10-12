@@ -52,3 +52,8 @@ public class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+
+//					9:31 上午	info
+//					解答成功:
+//					执行耗时:1 ms,击败了100.00% 的Java用户
+//					内存消耗:38.4 MB,击败了76.97% 的Java用户:
