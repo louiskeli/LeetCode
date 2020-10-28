@@ -44,7 +44,7 @@ class Solution {
         TreeNode left = invertTree(root.left);
         root.right = left;
         root.left = right;
-        //每次递归返回类型：一个左右节点已互换完成的节点
+        //每次递归返回类型：一个左右节点已互换完成的父节点
         return root;
     }
 }
