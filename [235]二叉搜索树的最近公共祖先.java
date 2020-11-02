@@ -50,6 +50,7 @@ class Solution {
         //如果根节点和p，q的差为正数，说明这两个差值要么都为正要么都为负，
         //也就是说，p，q都位于root节点的同一侧
         while ((root.val - p.val) * (root.val - q.val) > 0){
+            //根据二叉搜索树节点值val以左中右的顺序递增的性质来进行root节点的前进方向
             root = p.val < root.val ? root.left : root.right;
         }
         //如果相乘的结果为正数，说明p，q正好是root的左右节点
