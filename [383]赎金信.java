@@ -22,6 +22,7 @@ class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
         HashMap<Character,Integer> map = new HashMap<>();
 
+        //第一次遍历将magazine字符串中的字符输入到哈希表中
         for (int i = 0; i < magazine.length(); i++){
             char key = magazine.charAt(i);
             if (map.containsKey(key)){
@@ -31,6 +32,7 @@ class Solution {
             }
         }
 
+        //第二次遍历将ransomNote字符串中的字符同哈希表向对应
         for (int i = 0;i < ransomNote.length(); i++){
             char key = ransomNote.charAt(i);
             if (map.containsKey(key) && map.get(key) > 0){
