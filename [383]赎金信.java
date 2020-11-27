@@ -32,7 +32,7 @@ class Solution {
             }
         }
 
-        //第二次遍历将ransomNote字符串中的字符同哈希表向对应
+        //第二次遍历将ransomNote字符串中的字符同哈希表相对应
         for (int i = 0;i < ransomNote.length(); i++){
             char key = ransomNote.charAt(i);
             if (map.containsKey(key) && map.get(key) > 0){
